@@ -2,7 +2,7 @@
 Student Manager
 =====================
 
-** Student Manager ** is aimed to assist the large student community across all disciplines. A life of any aspiring student is no walk-in-the-park and it would be nice if there is someone “in their hands” who can always assist him/her towards achieving their dreams. This application is designed to assist the students in managing all their course-work including lectures and assignments that they learn in schools and colleges or even at home. It helps them by keeping track of their daily chores.
+**Student Manager** is aimed to assist the large student community across all disciplines. A life of any aspiring student is no walk-in-the-park and it would be nice if there is someone “in their hands” who can always assist him/her towards achieving their dreams. This application is designed to assist the students in managing all their course-work including lectures and assignments that they learn in schools and colleges or even at home. It helps them by keeping track of their daily chores.
 
 --------
 Features
@@ -16,7 +16,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt
   
-  #. User authentication
+  #. Semester List Page 
   
 	.. image::  assets/login_user.png
 	   :name: Create Organisation
@@ -24,7 +24,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt
   
-  #. Main menu
+  #. Course List Page 
   
 	.. image::  assets/admin_master.png
 	   :name: Master menu
@@ -32,7 +32,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt
   
-  #. Maintaining books of accounts
+  #. Course Detail Page 
   
 	.. image::  assets/create_account.png
 	   :name: Create account
@@ -40,18 +40,15 @@ Features
 	   :height: 200pt
 	   :width: 350pt
   
-  #. Recording, cloning and editing transactions and Recording of transactions 
-     under particular project
-  
+  #. Lecture Page
+
 	.. image::  assets/create_voucher.png
 	   :name: Create voucher
 	   :align: center
 	   :height: 200pt
 	   :width: 350pt
   
-  #. Generating reports such as Ledger Accounts, Trial Balance(Net,
-     Gross, Extended), Profit and Loss Account, Project Statement,
-     Cash Flow and Balance Sheet, Bank Reconciliation.
+  #. Lecture Details Page
 
 	.. image::  assets/ledger.png
 	   :name: Ledger
@@ -59,8 +56,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt     
      
-  #. Rollover
-  #. Export reports in PDF/CSV format
+  #. Keyword List Page 
   
 	.. image::  assets/pdf_file_security.png
 	   :name: PDF file security
@@ -68,7 +64,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt
   
-  #. Import/Export of organization data to other device
+  #. Assignment Page 
   
 	.. image::  assets/import_organisation.png
 	   :name: Import Organisation
@@ -76,7 +72,7 @@ Features
 	   :height: 200pt
 	   :width: 350pt
 
-  #. ABT running using remote server
+  #. Assignment Details Page 
   
 	.. image::  assets/remote_location.png
 	   :name: Set remote location address
@@ -85,78 +81,31 @@ Features
 	   :width: 350pt  
 
 
-ABTcore - a backend to Aakash Business Tool
---------------------------------------------
-
-The entire backend has Python code base. `ABTcore
-<https://github.com/androportal/ABTcore>`_ provides a backend to
-**Aakash Business Tool**. On Aakash tablet, it runs in a ``chroot``
-environment(your device need to be rooted for this!). More information
-can be found `here
-<https://github.com/androportal/ABTcore/blob/master/README.rst>`_
-
-
 How to install
 ---------------
 
-Simple and recommended install procedure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  #. Download the StudentManager.apk file from the bin/ folder of this repository.
+  #. Copy the StudentManager.apk file into your Aakash tablet. 
+  #. Run the .apk file to install the application.
 
-  #. This process requires a working Internet connection. 
+ 
   #. If you're behind proxy, then do appropriate settings to bypass
      your proxy server. You will find proxy setting in ``Settings`` ->
      ``WiFi`` -> ``Advance Options`` and also bypass ``127.0.0.1`` proxy
-     settings.  This is **not** required for direct Internet connections.
-  #. Open the browser on Aakash and visit this link:
-     **http://aakashlabs.org/downloads/**. Please find **download** link for 
-     ``Aakash Business Tool``. Download and install the apk.
-  #. Click on **ABT icon** from the list of applications installed on device and allow
-     it to download image file.
-  #. The download and uncompress process will take some while, so
-     please be patience. When download completes, it will prompt for
-     reboot. Please say ``Yes`` to reboot.
-  #. After reboot, you can again visit android's application menu and
-     click on **ABT icon**.
-
-Manual installation
-~~~~~~~~~~~~~~~~~~~
- 
-  #. Visit **http://aakashlabs.org/ac/projects/** from your system.
-     Please find links **download** and **Additional URL** from ``Aakash Business 
-     Tool`` to download ABT.apk and compressed chroot image respectively .
-
-  #. Extract image.
-       
-  #. Extraction process will produce ``abt.img``. Copy
-     ``abt.img`` and ``ABT.apk`` to sdcard(internal or external) of your Aakash
-     tablet.
-     
-  #. Then install ABT using ABT.apk, it will ask the user to reboot the device to finish
-     installation. Now user can locate **ABT icon** in the application list.  
+     settings.  This is **not** required for direct Internet connections.  
 
 Usage 
 ------
 
-This `branch` contains an Android(4.2, API-17) code for the User
-Interface of Aakash Business Tool.
+This `branch` contains an Android(4.0.3, API-15) code for the User
+Interface of Student Manager.
 
-User's can clone this repo by typing ::
+Users can clone this repo by typing ::
 
-   git clone -b holo_theme https://github.com/androportal/ABT.git
-
-if you want to clone code for Android(4.0.3, API-15), type ::
-
-   git clone -b ics https://github.com/androportal/ABT.git
+   git clone https://github.com/androportal/ABT.git
 
 
-if you want to checkout other branches then type, ::
-
-   git checkout -b holo_theme remotes/origin/holo_theme
-   git checkout -b docs remotes/origin/docs
-   git checkout -b froyo remotes/origin/froyo
-   git checkout -b ics remotes/origin/ics
-
-Importing **ABT** as an `eclipse <http://www.eclipse.org/>`_ project
+Importing **Student_Manager** as an `eclipse <http://www.eclipse.org/>`_ project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - For setting up Android SDK and AVD in eclipse, please visit this `link
@@ -183,16 +132,7 @@ After cloning the required branch, start eclipse
 Documentation
 -------------
 
-For User and developer's guide, please visit
-`http://aakashlabs.org/docs/abt/index.html
-<http://aakashlabs.org/app/webroot/docs/abt/index.html>`_
-
-Documentation in raw `sphinx <http://sphinx.pocoo.org/>`_ format can
-be cloned from ::
-
-   git clone -b docs https://github.com/androportal/ABT.git
-
-please refer ``README.rst`` on how to generate html docs
+For User and developer's guide, please visit Documentation\ directory.
 
 Help, bugs, feedback
 --------------------
